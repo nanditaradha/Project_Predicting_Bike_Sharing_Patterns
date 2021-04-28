@@ -39,7 +39,7 @@ The objective of this project is to build and train neural networks from scratch
      
 2.   Dataset
 
-     Bike-sharing rental process is highly correlated to the environmental and seasonal settings.For instance,weather conditions,precipitation,day of week,season,hour of              the day,etc. can affect the rental behaviors.The core data set is related to the two-year historical log corresponding to years 2011 and 2012 from Capital Bikeshare system,      Washington D.C., USA which is publicly available in http://capitalbikeshare.com/system-data.We aggregated the data on two hourly and daily basis and then extracted and          added the corresponding weather and seasonal information.Weather information are extracted from http://www.freemeteo.com.
+     Bike-sharing rental process is highly correlated to the environmental and seasonal settings.For instance,weather conditions,precipitation,day of week,season,hour of              the day,etc. can affect the rental behaviors.The core data set is related to the two-year historical log corresponding to years 2011 and 2012 from Capital Bikeshare system,      Washington D.C., USA which is publicly available in http://capitalbikeshare.com/system-data. We aggregated the data on two hourly and daily basis and then extracted and          added the corresponding weather and seasonal information.Weather information are extracted from http://www.freemeteo.com.
      
 3.   Dataset Description
 
@@ -63,12 +63,12 @@ The objective of this project is to build and train neural networks from scratch
       - 3: Light Snow, Light Rain + Thunderstorm + Scattered clouds, Light Rain + Scattered clouds
       - 4: Heavy Rain + Ice Pallets + Thunderstorm + Mist, Snow + Fog
      temp : Normalized temperature in Celsius. The values are divided to 41 (max)
-     atemp: Normalized feeling temperature in Celsius. The values are divided to 50 (max)
-     hum: Normalized humidity. The values are divided to 100 (max)
-     windspeed: Normalized wind speed. The values are divided to 67 (max)
-     casual: count of casual users
-     registered: count of registered users
-     cnt: count of total rental bikes including both casual and registered
+     atemp : Normalized feeling temperature in Celsius. The values are divided to 50 (max)
+     hum : Normalized humidity. The values are divided to 100 (max)
+     windspeed : Normalized wind speed. The values are divided to 67 (max)
+     casual : count of casual users
+     registered : count of registered users
+     cnt : count of total rental bikes including both casual and registered
 
 4.  Data Pre-Processing And Cleaning
 

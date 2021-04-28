@@ -33,15 +33,15 @@ The objective of this project is to build and train neural networks from scratch
 * Mpdel Evaluation
 * Model Results
 
-## 1.Introduction
+##1. Introduction
      
      In this project,you'll get to build a neural network from scratch to carry out a prediction problem on a real dataset! By building a neural network from the ground up,          you'll have a much better understanding of gradient descent,backpropagation,and other concepts that are important to know.
      
-## 2.Dataset
+##2. Dataset
 
      Bike-sharing rental process is highly correlated to the environmental and seasonal settings.For instance,weather conditions,precipitation,day of week,season,hour of              the day,etc. can affect the rental behaviors.The core data set is related to the two-year historical log corresponding to years 2011 and 2012 from Capital Bikeshare system,      Washington D.C., USA which is publicly available in http://capitalbikeshare.com/system-data.We aggregated the data on two hourly and daily basis and then extracted and          added the corresponding weather and seasonal information.Weather information are extracted from http://www.freemeteo.com.
      
-## 3.Dataset Description
+##3. Dataset Description
 
      * hour.csv : bike sharing counts aggregated on hourly basis.Records: 17379 hours
      * day.csv : bike sharing counts aggregated on daily basis.Records: 731 days

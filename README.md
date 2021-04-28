@@ -138,8 +138,7 @@ The objective of this project is to build and train neural networks from scratch
     
 12. Installation
 
-    For best experience with managing dependency I advise you to install [Anaconda](https://docs.anaconda.com/anaconda/install/) or [miniconda]
-    (https://docs.conda.io/projects/continuumio-conda/en/latest/user-guide/install/download.html)
+    For best experience with managing dependency I advise you to install [Anaconda](https://docs.anaconda.com/anaconda/install/) or [miniconda](https://docs.conda.io/projects/continuumio-conda/en/latest/user-guide/install/download.html)
     
     Create A Virtual Environment With Conda
     

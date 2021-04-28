@@ -106,12 +106,12 @@ The objective of this project is to build and train neural networks from scratch
     
     Neural networks are extremely powerful in finding complex patterns in datasets. The feedforward neural network consists of a number of fully connected layers:
 
-   * The input layer consists of the variables used for the prediction task
-   * An optional number of "hidden" layers, each of which analyzes the patterns of the data from the previous layer
-   * An output layer that combines the results of the last hidden layer and produces the prediction (classification or regression)
-   The layers in the neural network being fully connected means that every node in every hidden layer processes information from all nodes from the previous layer. In the first    hidden layer, this means processing the input data; in subsequent hidden layers, this means processing, combining data from previous hidden layers. Then when this is all        done, the network checks its accuracy against known samples and backpropagates prediction error, gradually changing the weighting between nodes in the network until ample        accuracy is achieved. This is how a neural network can identify complex relationships in datasets.
+    * The input layer consists of the variables used for the prediction task
+    * An optional number of "hidden" layers, each of which analyzes the patterns of the data from the previous layer
+    * An output layer that combines the results of the last hidden layer and produces the prediction (classification or regression)
+    The layers in the neural network being fully connected means that every node in every hidden layer processes information from all nodes from the previous layer. In the first     hidden layer, this means processing the input data; in subsequent hidden layers, this means processing, combining data from previous hidden layers. Then when this is all         done, the network checks its accuracy against known samples and backpropagates prediction error, gradually changing the weighting between nodes in the network until ample       accuracy is achieved. This is how a neural network can identify complex relationships in datasets.
 
-   In this particular case, the dataset presented a quite complex time series with several, only partially cyclical fluctuations. I utilized only 1 hidden layer but with 10        nodes to capture the variability of demand. In the end, as can be seen in the notebook, the prediction is quite accurate for most of the time periods, with a slight weakness    around the Festive Season. This is due to the fact that the training data didn't include much information for previous Festive Seasons and as such, couldn't train properly      for this scenario.
+    In this particular case, the dataset presented a quite complex time series with several, only partially cyclical fluctuations. I utilized only 1 hidden layer but with 10         nodes to capture the variability of demand. In the end, as can be seen in the notebook, the prediction is quite accurate for most of the time periods, with a slight weakness     around the Festive Season. This is due to the fact that the training data didn't include much information for previous Festive Seasons and as such, couldn't train properly       for this scenario.
     
  9. Training The Neural Network
 

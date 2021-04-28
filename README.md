@@ -30,18 +30,18 @@ The objective of this project is to build and train neural networks from scratch
 * Splitting The Data Into Train,Validation And Test Datasets
 * Build The Neural Network
 * Training The Neural Network
-* Mpdel Evaluation
+* Model Evaluation
 * Model Results
 
 1.   Introduction
      
      In this project,you'll get to build a neural network from scratch to carry out a prediction problem on a real dataset! By building a neural network from the ground up,          you'll have a much better understanding of gradient descent,backpropagation,and other concepts that are important to know.
      
-##2. Dataset
+2.   Dataset
 
      Bike-sharing rental process is highly correlated to the environmental and seasonal settings.For instance,weather conditions,precipitation,day of week,season,hour of              the day,etc. can affect the rental behaviors.The core data set is related to the two-year historical log corresponding to years 2011 and 2012 from Capital Bikeshare system,      Washington D.C., USA which is publicly available in http://capitalbikeshare.com/system-data.We aggregated the data on two hourly and daily basis and then extracted and          added the corresponding weather and seasonal information.Weather information are extracted from http://www.freemeteo.com.
      
-##3. Dataset Description
+3.   Dataset Description
 
      * hour.csv : bike sharing counts aggregated on hourly basis.Records: 17379 hours
      * day.csv : bike sharing counts aggregated on daily basis.Records: 731 days
@@ -70,25 +70,26 @@ The objective of this project is to build and train neural networks from scratch
      registered: count of registered users
      cnt: count of total rental bikes including both casual and registered
 
-## 4.Data Pre-Processing And Cleaning
+4.  Data Pre-Processing And Cleaning
 
-     The Bike-Sharing Dataset consists of 17379 records and 17 columns with no duplicate or null values.And the unnecessary columns such as 'instant', 'dteday', 'season',            'weathersit', 'weekday', 'atemp', 'mnth', 'workingday', 'hr' are dropped. 
+    The Bike-Sharing Dataset consists of 17379 records and 17 columns with no duplicate or null values.And the unnecessary columns such as 'instant', 'dteday', 'season',             'weathersit', 'weekday', 'atemp', 'mnth', 'workingday', 'hr' are dropped. 
+    
+5.  Creating Dummy Variables
+
+    The categorical columns such as 'season', 'weathersit', 'mnth', 'hr', 'weekday' are converted into dummies as they will be used in model building.
+
+6.  Standarzing The Continuous Variables   
+
+    To make training the network easier,I'll standardize 'casual', 'registered', 'cnt', 'temp', 'hum', 'windspeed', each of the continuous variables.That is,we'll shift and         scale the variables such that they have zero mean and a standard deviation of 1.
      
-## 5.Creating Dummy Variables
+7.  Splitting The Data Into Train,Validation And Test Datasets
 
-     The categorical columns such as 'season', 'weathersit', 'mnth', 'hr', 'weekday' are converted into dummies as they will be used in model building.
-
-## 6.Standarzing The Continuous Variables   
-
-     To make training the network easier,I'll standardize 'casual', 'registered', 'cnt', 'temp', 'hum', 'windspeed', each of the continuous variables.That is,we'll shift and        scale the variables such that they have zero mean and a standard deviation of 1.
+    I'll save the data for the last approximately 21 days to use as a test set after I've trained the network.I'll use this set to make predictions and compare them with             the actual number of riders.
      
-## 7.Splitting The Data Into Train,Validation And Test Datasets
-
-     I'll save the data for the last approximately 21 days to use as a test set after I've trained the network.I'll use this set to make predictions and compare them with            the actual number of riders.
-     
-     I've splitted the data into two sets,one for training and one for validating as the network is being trained. Since this is time series data,I'll train on historical            data,then try to predict on future data (the validation set).
+    I've splitted the data into two sets,one for training and one for validating as the network is being trained. Since this is time series data,I'll train on historical             data,then try to predict on future data (the validation set).
   
-## 8.Build The Neural Network
+8.  Build The Neural Network
 
-     ![](assets/neural_network.png)
- 
+    ![](assets/neural_network.png)
+
+      

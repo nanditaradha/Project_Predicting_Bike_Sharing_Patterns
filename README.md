@@ -48,10 +48,10 @@ The objective of this project is to build and train neural networks from scratch
      
      Both hour.csv and day.csv have the following fields, except hr which is not available in day.csv
 	
-instant: record index  
-dteday : date  
-season : season (1:springer, 2:summer, 3:fall, 4:winter)  
-yr : year (0: 2011, 1:2012)  
+     instant: record index  
+     dteday : date  
+     season : season (1:springer, 2:summer, 3:fall, 4:winter)  
+     yr : year (0: 2011, 1:2012)  
 mnth : month ( 1 to 12)  
 hr : hour (0 to 23)  
 holiday : weather day is holiday or not (extracted from http://dchr.dc.gov/page/holiday-schedule)  

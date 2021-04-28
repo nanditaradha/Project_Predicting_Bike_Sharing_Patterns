@@ -3,7 +3,7 @@
 Udacity Deep Learning Nanodegree Project #1.
 
 * This repo is about how to make predictions about Bike Sharing Patterns with our first built Neural Network.
-* You can refer to Original Udacity repo [here](https://github.com/udacity/deep-learning-v2-pytorch);in project-bikesharing folder.
+* You can refer to Original Udacity repo [here](https://github.com/udacity/deep-learning-v2-pytorch); in project-bikesharing folder.
 
 # Dataset Background
 

@@ -166,7 +166,7 @@ The objective of this project is to build and train neural networks from scratch
     
  13. Usage
 
-#### Run
+####   Run
      Run all code cells in the notebook. Optionally have a look at the file `my_answers.py`.
     
 

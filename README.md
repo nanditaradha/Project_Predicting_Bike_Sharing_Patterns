@@ -167,6 +167,10 @@ The objective of this project is to build and train neural networks from scratch
  13. Usage
 
      Run all code cells in the notebook. Optionally have a glance at the file `my_answers.py`.
+     
+ # Conclusion
+ 
+   The predictions given by the model are quite accurate. However, the model overestimes bike ridership in December because it hasn't had sufficient holiday season training        examples.
     
 
 

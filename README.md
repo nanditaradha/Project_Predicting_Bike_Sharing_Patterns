@@ -47,8 +47,8 @@ The objective of this project is to build and train neural networks from scratch
      * day.csv : bike sharing counts aggregated on daily basis.Records: 731 days
      
      Both hour.csv and day.csv have the following fields, except hr which is not available in day.csv
-	  
-     - instant: record index
+	
+	- instant: record index
 	- dteday : date
 	- season : season (1:springer, 2:summer, 3:fall, 4:winter)
 	- yr : year (0: 2011, 1:2012)

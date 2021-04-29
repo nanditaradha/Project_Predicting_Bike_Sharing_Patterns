@@ -128,14 +128,12 @@ The objective of this project is to build and train neural networks from scratch
     ```bash
     Progress: 100.0% ... Training loss: 0.068 ... Validation loss: 0.142
     ```
-    Training And Validation Results
     ![Center Image](./Neuralnetwork_Output_Images/result_training.png)
     
 11. Prediction Results
      
     Finally, the Neural Network is run against unseen test data and predictions can be seen in the image below.
 
-    Prediction Results
     ![](./Neuralnetwork_Output_Images/result_prediction.png)
     
 12. Installation

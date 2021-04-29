@@ -128,13 +128,15 @@ The objective of this project is to build and train neural networks from scratch
     ```bash
     Progress: 100.0% ... Training loss: 0.068 ... Validation loss: 0.142
     ```
-    ![Training Results](./assets/result_training.png)
+    Training And Validation Results
+    ![](./Neuralnetwork_Output_Images/result_training.png)
     
 11. Prediction Results
      
     Finally, the Neural Network is run against unseen test data and predictions can be seen in the image below.
 
-    ![Prediction Results](./assets/result_prediction.png)
+    Prediction Results
+    ![](./Neuralnetwork_Output_Images/result_prediction.png)
     
 12. Installation
 
@@ -170,7 +172,7 @@ The objective of this project is to build and train neural networks from scratch
      
  # Conclusion
  
-   The predictions given by the model are quite accurate. However, the model overestimes bike ridership in December because it hasn't had sufficient holiday season training        examples.
+   The predictions given by the model are quite accurate. However, the model overestimates bike ridership in December because it hasn't had sufficient holiday season training      examples.
     
 
 

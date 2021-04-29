@@ -129,7 +129,7 @@ The objective of this project is to build and train neural networks from scratch
     Progress: 100.0% ... Training loss: 0.068 ... Validation loss: 0.142
     ```
     Training And Validation Results
-    ![](./Neuralnetwork_Output_Images/result_training.png)
+    ![Center Image](./Neuralnetwork_Output_Images/result_training.png)
     
 11. Prediction Results
      

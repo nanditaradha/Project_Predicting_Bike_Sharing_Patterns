@@ -84,13 +84,13 @@ The objective of this project is to build and train neural networks from scratch
 
 6.  Standarzing The Continuous Variables   
 
-    To make training the network easier, I'll standardize 'casual', 'registered', 'cnt', 'temp', 'hum', 'windspeed', each of the continuous variables. That is, I'll shift and       scale the variables such that they have zero mean and a standard deviation of 1.
+    To make training the network easier, I've standardized 'casual', 'registered', 'cnt', 'temp', 'hum', 'windspeed', each of the continuous variables. That is, I've shifted and     scale the variables such that they have zero mean and a standard deviation of 1.
      
-7.  Splitting The Data Into Train,Validation And Test Datasets
+7.  Splitting The Data Into Train, Validation And Test Datasets
 
-    I'll save the data for the last approximately 21 days to use as a test set after I've trained the network. I'll use this set to make predictions and compare them with           the actual number of riders.
+    I've saved the data for the last approximately 21 days to use as a test set after I've trained the network. I've used this set to make predictions and compared them with         the actual number of riders.
      
-    I've splitted the data into two sets, one for training and one for validating as the network is being trained. Since this is time series data, I'll train on historical           data, then try to predict on future data (the validation set).
+    I've splitted the data into two sets, one for training and one for validating as the network is being trained. Since this is time series data, I've trained on historical         data, then tried to predict on future data (the validation set).
   
 8.  Build The Neural Network
 
@@ -102,16 +102,18 @@ The objective of this project is to build and train neural networks from scratch
 
     I used the weights to propagate signals forward from the input to the output layers in a neural network. I used the weights to also propagate error backwards from the output     back into the network to update our weights. This is called backpropagation.
     
-    Finally I built the Neural Network in addition to implementing both the forward pass and backwards pass through the network. I also set the hyperparameters: the learning         rate, the number of hidden units, and the number of training passes.
+    
     
     Neural networks are extremely powerful in finding complex patterns in datasets. The feedforward neural network consists of a number of fully connected layers:
 
-    * The input layer consists of the variables used for the prediction task
-    * An optional number of "hidden" layers, each of which analyzes the patterns of the data from the previous layer
-    * An output layer that combines the results of the last hidden layer and produces the prediction (classification or regression)
-    The layers in the neural network being fully connected means that every node in every hidden layer processes information from all nodes from the previous layer. In the first     hidden layer, this means processing the input data; in subsequent hidden layers, this means processing, combining data from previous hidden layers. Then when this is all         done, the network checks its accuracy against known samples and backpropagates prediction error, gradually changing the weighting between nodes in the network until ample       accuracy is achieved. This is how a neural network can identify complex relationships in datasets.
+    * The input layer consists of the variables used for the prediction task.
+    * An optional number of "hidden" layers, each of which analyzes the patterns of the data from the previous layer.
+    * An output layer that combines the results of the last hidden layer and produces the prediction (classification or regression).
+    The layers in the neural network being fully connected means that every node in every hidden layer processes information from all nodes from the previous layer. In the first     hidden layer, this means processing the input data; in subsequent hidden layers, this means processing, combining data from previous hidden layers. Then when this is all         done, the network checks its accuracy against known samples and backpropagates prediction error, gradually changing the weights between nodes in the network until ample         accuracy is achieved. This is how a neural network can identify complex relationships in datasets.
 
-    In this particular case, the dataset presented a quite complex time series with several, and also partially cyclical fluctuations. I utilized only 1 hidden layer and with 10     nodes to capture the variability of demand. In the end, as can be seen in the notebook, the prediction is quite accurate for most of the time periods, with a slight dimness     around the Festive Season. This is due to the fact that the training data didn't include much information of previous Festive Seasons and as such, couldn't train properly       for this scenario.
+    In this particular case, the dataset presented a quite complex time series with several, and also partially cyclical fluctuations. I utilized only 1 hidden layer and 10         nodes to capture the variability of demand. In the end, as can be seen in the notebook, the prediction is quite accurate for most of the time periods, with a slight dimness     around the Festive Season. This is due to the fact that the training data didn't include much information of previous Festive Seasons and as such, couldn't train properly       for this scenario.
+    
+    Finally I built the Neural Network in addition to implementing both the forward pass and backwards pass through the network. I also set the hyperparameters: the learning         rate, the number of hidden units, and the number of training passes.
     
  9. Training The Neural Network
 

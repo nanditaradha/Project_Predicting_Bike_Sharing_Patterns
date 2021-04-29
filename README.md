@@ -84,7 +84,7 @@ The objective of this project is to build and train neural networks from scratch
 
 6.  Standarzing The Continuous Variables   
 
-    To make training the network easier, I've standardized 'casual', 'registered', 'cnt', 'temp', 'hum', 'windspeed', each of the continuous variables. That is, I've shifted and     scale the variables such that they have zero mean and a standard deviation of 1.
+    To make training the network easier, I've standardized 'casual', 'registered', 'cnt', 'temp', 'hum', 'windspeed', each of the continuous variables. That is, I've shifted and     scaled the variables such that they have zero mean and a standard deviation of 1.
      
 7.  Splitting The Data Into Train, Validation And Test Datasets
 

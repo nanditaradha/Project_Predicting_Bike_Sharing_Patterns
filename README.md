@@ -94,16 +94,8 @@ The objective of this project is to build and train neural networks from scratch
   
 8.  Build The Neural Network
 
-    Finally I built the Neural Network in addition to implementing both the forward pass and backwards pass through the network. I also set the hyperparameters: the learning         rate, the number of hidden units, and the number of training passes.
-
-    ![](./assets/neural_network.png)
-    
-    The network has two layers, a hidden layer and an output layer. The hidden layer will use the sigmoid function for activations. The output layer has only one node and is         used for the regression or classification, the output of the node is the same as the input of the node. That is, the activation function is  𝑓(𝑥)=𝑥 . A function that takes       the input signal and generates an output signal, but takes into account the threshold, is called an activation function. We work through each layer of our network               calculating the outputs for each neuron. All of the outputs from one layer become inputs to the neurons on the next layer. This process is called forward propagation.
-
-    I used the weights to propagate signals forward from the input to the output layers in a neural network. I used the weights to also propagate error backwards from the output     back into the network to update our weights. This is called backpropagation.
-    
-    
-    
+    ![](./assets/neural_network.png) 
+        
     Neural networks are extremely powerful in finding complex patterns in datasets. The feedforward neural network consists of a number of fully connected layers:
 
     * The input layer consists of the variables used for the prediction task.
@@ -111,7 +103,7 @@ The objective of this project is to build and train neural networks from scratch
     * An output layer that combines the results of the last hidden layer and produces the prediction (classification or regression).
     The layers in the neural network being fully connected means that every node in every hidden layer processes information from all nodes from the previous layer. In the first     hidden layer, this means processing the input data; in subsequent hidden layers, this means processing, combining data from previous hidden layers. Then when this is all         done, the network checks its accuracy against known samples and backpropagates prediction error, gradually changing the weights between nodes in the network until ample         accuracy is achieved. This is how a neural network can identify complex relationships in datasets.
 
-    In this particular case, the dataset presented a quite complex time series with several, and also partially cyclical fluctuations. I utilized only 1 hidden layer and 10         nodes to capture the variability of demand. In the end, as can be seen in the notebook, the prediction is quite accurate for most of the time periods, with a slight dimness     around the Festive Season. This is due to the fact that the training data didn't include much information of previous Festive Seasons and as such, couldn't train properly       for this scenario.
+    In this particular case, the dataset presented a quite complex time series with several, and also partially cyclical fluctuations. I utilized only 1 hidden layer and 10         nodes to capture the changes. In the end, as can be seen in the notebook, the prediction is quite accurate for most of the time periods, with a slight dimness around the         Festive Season. This is due to the fact that the training data didn't include much information of previous Festive Seasons and as such, couldn't train properly for this         scenario.
     
     Finally I built the Neural Network in addition to implementing both the forward pass and backwards pass through the network. I also set the hyperparameters: the learning         rate, the number of hidden units, and the number of training passes.
     

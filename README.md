@@ -167,6 +167,7 @@ The objective of this project is to build and train neural networks from scratch
  
    The predictions given by the model are quite accurate. However, the model overestimates bike ridership in December because it hasn't had sufficient holiday season training      examples.
     
+    
 
 
     
